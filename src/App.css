@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Mulish:wght@200;300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  
+  width: 75%;
+  margin: auto;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+nav ul li{
+  padding: 0 13px;
+  margin: 0 3px;
+  font-family: "Inter";
+  color: #b8becd;
+}
+nav ul li button{
+   width: 150px; 
+  padding: 11px 10px;
+  border:2px solid #fb8f1d;
+  border-radius: 10px;
+ font-size: 1.05rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.first-btn{
+  color:  #fb8f1d;
+  background: #fff;
+}
+.second-btn{
+  color:  #fff;
+  background: #fb8f1d;
+}
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-container h1{
+  font-family: "Playfair Display";
+  font-size: 3.5rem;
+}
+
+.hero-img-wrapper img{
+  width: 100%;
+}
+.hero-img-wrapper{
+  width: 45%;
 }
