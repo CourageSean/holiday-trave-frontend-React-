@@ -3,12 +3,12 @@ import Hero from "./Hero"
 import Test from "./Test"
 import {useState} from "react"
 
-export default function Home({onHandleExplore,onChangeLocation,onChangeActivity}) {
+export default function Home() {
     
     return (
         <div>
-           <Hero onHandleExplore={onHandleExplore} onChangeLocation={onChangeLocation} onChangeActivity={onChangeActivity} />
-           <Test/>
+           <Hero  />
+           {/* <Test/> */}
         </div>
     )
 }
